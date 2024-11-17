@@ -112,7 +112,7 @@ function App() {
         {summary && (
           <div className="bg-gray-800 rounded-xl p-6 shadow-xl">
             <h2 className="text-xl font-semibold mb-4">Repository Summary</h2>
-            <div className="prose prose-invert max-w-none">
+            <div className="prose prose-invert prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700">
               {summary.split('\n').map((line, i) => (
                 <p key={i} className="mb-2">{line}</p>
               ))}
@@ -152,7 +152,7 @@ function App() {
             {answer && (
               <div className="mt-4 p-4 bg-gray-700/50 rounded-lg">
                 <h3 className="font-medium mb-2">Answer:</h3>
-                <div className="prose prose-invert max-w-none">
+                <div className="prose prose-invert prose-pre:bg-gray-900 prose-pre:border prose-pre:border-gray-700">
                   {answer.split('\n').map((line, i) => (
                     <p key={i} className="mb-2">{line}</p>
                   ))}
